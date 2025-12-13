@@ -13,7 +13,11 @@ with open('encoder.pkl', 'rb') as file:
     le = pkl.load(file)
 
 max_length= 15
-classifier = load_model('News_Classification.keras')
+classifier = load_model(
+    "News_Classification.keras",
+    compile=False,
+    safe_mode=False
+)
 model_name = "facebook/bart-large-cnn"
 # vocab_size= 20000
 
