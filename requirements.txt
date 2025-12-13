@@ -3,3 +3,6 @@ numpy
 tensorflow
 transformers
 scikit-learn
+torch
+transformers
+sentencepiece
